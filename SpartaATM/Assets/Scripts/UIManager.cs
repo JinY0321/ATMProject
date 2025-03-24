@@ -9,6 +9,8 @@ public class UIManager : MonoBehaviour
     public TMP_Text cashText;
     public TMP_Text amountText;
 
+    public static object Instance { get; internal set; }
+
     private void Start()
     {
         Refresh(); // 게임 시작 시 UI 반영
